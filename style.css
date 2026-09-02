@@ -48,6 +48,7 @@ body {
     padding: 1rem;
     margin: 2rem;
     height: max-content;
+    user-select: none;
 
 }
 
@@ -109,5 +110,13 @@ body {
 .btn:hover {
     background-color: var(--primary-color);
     transform: scale(1.1);
+    border: 1px solid black;
+    color: black;
+    font-width: 800;
 
+}
+
+img {
+    width: 25px;
+    margin: 10px;
 }

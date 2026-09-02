@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --primary-color: #FFD758;
+    --clr-white: #fff;
+    --clr-blue: #2BBBD7;
+
+}
+
+body {
+    background-color: var(--primary-color);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.quote-card {
+    width: 600px;
+    background-color: var(--clr-white);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.pri-h {
+    padding-top: 0.8rem;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+.main {
+    padding: 1rem;
+    margin: 2rem;
+    height: max-content;
+
+}
+
+#quote-txt {
+    font-size: 2rem;
+}
+
+#quote-txt::before,
+#quote-txt::after {
+    content: '"';
+
+}
+
+#reference {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+#reference::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    height: 2.5rem;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Libertinus Math", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background-color: var(--clr-blue);
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+
+}
